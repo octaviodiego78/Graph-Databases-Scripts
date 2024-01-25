@@ -122,3 +122,6 @@ RETURN  COLLECT(p.name)
 
 
 //Graphs of 1,2,3 jumps
+
+//One jump 
+MATCH (p:Person{name:'Keanu Reeves'})-[*1]-(m) RETURN p,m
